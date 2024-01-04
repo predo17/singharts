@@ -1,0 +1,49 @@
+{% extends "layout.njk" %}
+    {% block videos %}
+    <a href="/in">home</a>
+    {% endblock %}
+ 
+     {% block content %}
+    <title>Pedro Henrique-videos Dinamicos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    
+    
+ 
+    <section class="cards">
+        {% for item in items %}
+        <div class="card" id="{{item.id}}" >
+            <div class="card_image">
+                <img src="https://img.youtube.com/vi/{{item.id}}/mqdefault.jpg" alt="{{item.title}}">
+            </div>
+            <div class="card_content">
+                <p>{{item.title}}</p>
+            </div>
+         <div class="card_info">
+                <p>{{item.duration}}</p>
+                <div class="card_price">
+                {{item.price}}
+                </div>
+                
+            </div>
+       
+           
+        </div>
+        {% endfor %}
+    </section>
+
+<div class="modal_overlay">
+    <div class="modal">
+        <div class="close_modal">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </div>
+        <div class="modal_content">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+<script src="scripts.js"></script>
+
+{% endblock %}

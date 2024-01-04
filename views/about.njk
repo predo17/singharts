@@ -1,0 +1,18 @@
+{% extends "layout.njk" %}
+
+{% block videos %}
+<a href="/videos">videos</a>
+{% endblock %}
+
+{% block content %} 
+
+ 
+        <div id="box">
+            <img src="{{about.avatar_url}}" alt="{{about.nome}}">
+            <h1>{{about.nome}}</h1>
+            <h2>{{about.role}}</h2>
+           <p>{{about.descriptio}} <a> href="target="_blank">My Jobs</a></p>
+        </div>
+
+       
+        {% endblock %}

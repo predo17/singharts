@@ -2,7 +2,8 @@
   "name": "singharts",
   "version": "1.0.0",
   "description": "",
-  "main": "arraysturmaa.js",
+  "main": "arraysturma.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
